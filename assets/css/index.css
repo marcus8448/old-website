@@ -55,17 +55,19 @@ body {
 .footer {
     background-color: rgb(48, 48, 48);
     color: white;
-    height: 128px;
-    display: block;
     padding-top: 2rem;
     margin-top: 2rem;
-    border-top: solid 1px rgb(55, 55, 55);
+    border-top: solid 4px rgb(55, 55, 55);
     font-size: 1rem;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
   
 .footer h4.copyright {
-    color: rgb(255, 255, 255);
+    color: white;
     font-style: normal;
     font-weight: normal;
     text-align: center;
