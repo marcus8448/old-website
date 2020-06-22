@@ -14,6 +14,10 @@ body {
     vertical-align: middle;
 }
 
+a {
+    color: rgb(15, 117, 190);
+}
+
 .header a {
     float: left;
     text-align: center;
@@ -39,6 +43,10 @@ body {
 
 .header-right {
     float: right;
+}
+
+.header-text {
+    float: left;
 }
 
 @media screen and (max-width: 500px) {
@@ -71,4 +79,5 @@ body {
     font-style: normal;
     font-weight: normal;
     text-align: center;
+    padding-bottom: 2%;
 }
