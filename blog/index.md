@@ -11,7 +11,7 @@ permalink: /blog/
 {% if post.image %}
 <img src="{{post.image}}" alt="logo" class="tile">
 {% else %} 
-<img src="/marcus8448.png" class="tile">
+<img src="/assets/images/marcus8448.png" class="tile">
 {% endif %}
 
 <div style="display: block;" markdown=1>
