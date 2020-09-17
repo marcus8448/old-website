@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-CA">
   <head>
-    <meta name="robots" content="follow"/>
+    <meta name="robots" content="index,follow"/>
     <meta name="language" content="English">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,21 +16,29 @@
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="icon" href="/favicon.ico" />
+    <!-- Prevent FOUC (flash of unstyled content) - http://johnpolacek.com/2012/10/03/help-prevent-fouc/ -->
+    <style type="text/css">
+      .no-fouc {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      document.documentElement.className = 'no-fouc';
+      window.addEventListener('ready', function () {
+        $('.no-fouc').removeClass('no-fouc'); //it doesn't work with a closing parenthesis?! 
+      }
+    </script>
     <title>marcus8448 - {{page.title}}</title>
   </head>
   
   <body>
     <div class="header">
-      <a style="font-family: 'Courier New', Courier, monospace;
-       color: azure; float: left; text-align: center; display: flex;
-        align-items: center; font-weight: 800; font-size: 32px; float: left;
-         text-align: center; text-decoration: none; line-height: 32px; padding: 19.5px; 
-         padding-left: 24px; padding-right: 24px;" href="/">marcus8448</a>
+      <a class="header-text" href="/">marcus8448</a>
       <div class="header-right">
-        <a href="/">Home</a>
-        <a href="/projects/">Projects</a>
-        <a href="/blog/">Blog</a>
-        <a href="/about/">About</a>
+        <a class="header-right-text" href="/">Home</a>
+        <a class="header-right-text" href="/projects/">Projects</a>
+        <a class="header-right-text" href="/blog/">Blog</a>
+        <a class="header-right-text" href="/about/">About</a>
       </div>
     </div>
 
@@ -38,7 +46,7 @@
       {{ content }}
   	</div>
 
-    <footer class="footer">
+    <footer role="contentinfo">
       <h4 class="copyright">
         Copyright © marcus8448 2020. All Rights Reserved
       </h4>
