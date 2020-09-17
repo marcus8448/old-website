@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Home
+description: 
 ---
-# marcus8448.github.io
-Welcome to my website!
-
-Currently under construction. Check back soon!
+# Under Construction
