@@ -145,7 +145,7 @@ footer h4.copyright {
     box-shadow: 0px 0px 16px #c7c7c7;
     display: flex;
     text-align: left;
-    width: 98vw;
+    width: 100vw - 8px;
 	border-radius: 8px;
 	float: left;
 	clear: both;
@@ -174,17 +174,6 @@ img.tile {
 	margin: 0px;
 	margin-top: -16px;
 }
-
-/* @media screen and (max-width: 500px) {
-	.header-right.a {
-		float: left;
-		display: block;
-		text-align: left;
-	}
-	.header-right {
-		float: right;
-	}
-} */
 
 @media (prefers-color-scheme: dark) {
 	html {
