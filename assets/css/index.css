@@ -14,11 +14,54 @@ body {
 
 .header {
 	background-color: #3f3f3f;
-	overflow-x: auto;
-	overflow-y: hidden;
 	height: 64px;
 	position: relative;
 	vertical-align: middle;
+	width: 100vw;
+}
+
+.header-right a.icon {
+	display: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 756px) {
+  .header-right a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .header-right a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .header-right.responsive {position: relative;}
+  .header-right.responsive .icon {
+	position: block;
+    right: 0;
+    top: 0;
+  }
+  .header-right.responsive a {
+    float: right;
+    display: block;
+    text-align: left;
+  }
+  .header-right.responsive .dropdown {float: none;}
+  .header-right.responsive .dropdown-content {position: relative;}
+  .header-right.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .header-right a {
@@ -108,7 +151,7 @@ footer h4.copyright {
 	clear: both;
 	margin-bottom: 16px;
 	margin-top: 16px;
-	height: 128px;
+	min-height: 128px;
 }
 
 .tile h1 a {
@@ -132,7 +175,7 @@ img.tile {
 	margin-top: -16px;
 }
 
-/* @media screen and (max-width: 500px) { */
+/* @media screen and (max-width: 500px) {
 	.header-right.a {
 		float: left;
 		display: block;
@@ -141,7 +184,7 @@ img.tile {
 	.header-right {
 		float: right;
 	}
-/* } */
+} */
 
 @media (prefers-color-scheme: dark) {
 	html {
@@ -187,8 +230,8 @@ img.tile {
 	}
 
 
-.tile {
-    background-color: #484848;
-    box-shadow: 0px 0px 16px #484848;
-}
+	.tile {
+    	background-color: #484848;
+    	box-shadow: 0px 0px 16px #484848;
+	}
 }

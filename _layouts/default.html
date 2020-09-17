@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-CA">
   <head>
+    <!-- Prevent FOUC (flash of unstyled content) - http://johnpolacek.com/2012/10/03/help-prevent-fouc/
+    <style type="text/css">
+      .no-fouc {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      document.documentElement.className = 'no-fouc';
+      window.addEventListener('ready', function () {
+        $('.no-fouc').removeClass('no-fouc'); //it doesn't work with a closing parenthesis?! 
+      })
+    </script> -->
+
     <meta name="robots" content="index,follow"/>
     <meta name="language" content="English">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -16,25 +29,14 @@
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="icon" href="/favicon.ico" />
-    <!-- Prevent FOUC (flash of unstyled content) - http://johnpolacek.com/2012/10/03/help-prevent-fouc/ -->
-    <style type="text/css">
-      .no-fouc {
-        display: none;
-      }
-    </style>
-    <script type="text/javascript">
-      document.documentElement.className = 'no-fouc';
-      window.addEventListener('ready', function () {
-        $('.no-fouc').removeClass('no-fouc'); //it doesn't work with a closing parenthesis?! 
-      }
-    </script>
     <title>marcus8448 - {{page.title}}</title>
   </head>
   
   <body>
     <div class="header">
       <a class="header-text" href="/">marcus8448</a>
-      <div class="header-right">
+      <div class="header-right" id="headerContent">
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="smallScreen()">&#9776;</a>
         <a class="header-right-text" href="/">Home</a>
         <a class="header-right-text" href="/projects/">Projects</a>
         <a class="header-right-text" href="/blog/">Blog</a>
@@ -51,5 +53,15 @@
         Copyright © marcus8448 2020. All Rights Reserved
       </h4>
     </footer>
+    <script>
+      function smallScreen() {
+        var element = document.getElementById("headerContent");
+        if (element.className === "header-right") {
+          element.className = "header-right responsive";
+        } else {
+          element.className = "header-right";
+        }
+      }
+    </script>
   </body>
 </html>
