@@ -173,6 +173,8 @@ img.tile {
 	padding-right: 32px;
 	margin: 0px;
 	margin-top: -16px;
+	color: #c7c7c7;
+	background-color: #c7c7c7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -218,9 +220,13 @@ img.tile {
 		color: #b3adb3;
 	}
 
-
 	.tile {
     	background-color: #484848;
     	box-shadow: 0px 0px 16px #484848;
+	}
+
+	img.tile {
+		color: #484848;
+		background-color: #484848;
 	}
 }
