@@ -2,7 +2,7 @@ body {
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0px;
-	color: #353535;
+	color: #1d1d1d;
 }
 
 .header {
@@ -29,6 +29,7 @@ body {
 .header-right a:hover {
 	background-color: rgb(150, 150, 150);
 	color: #1a1a1a;
+	text-decoration: none;
 }
 
 .header-right {
@@ -65,6 +66,20 @@ body {
 	width: 100%;
 }
 
+a {
+	color: #0060af;
+	text-decoration: none;
+}
+
+h1 a {
+	color: #0060af;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .footer h4.copyright {
 	color: #353535;
 	font-style: normal;
@@ -80,7 +95,7 @@ body {
 
 	body {
 		background-color: #332f33;
-		color: #b3adb3;
+		color: #cecece;
 	}
 
 	.header {
@@ -94,6 +109,15 @@ body {
 	.header-right a:hover {
 		background-color: rgb(150, 150, 150);
 		color: #232323;
+	}
+
+	a {
+		color: #0060af;
+	}
+
+	h1 a {
+		color: #0060af;
+		text-decoration: none;
 	}
 
 	.footer {
