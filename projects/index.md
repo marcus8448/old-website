@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 <hr>
-<div class="tiles" style="display: flexbox;">
+<div class="tiles">
 <div class="tile" markdown=1>
 <img src="/assets/images/gamemode_overhaul.png" alt="icon" class="tile">
 <div style="display: block;" markdown=1>
@@ -38,4 +38,4 @@ Project-ILE is Minecraft mod that specializes in ranged projectiles and weaponry
 </div>
 </div>
 </div>
-<hr>
+<hr style="display: block;">
