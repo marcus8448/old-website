@@ -1,14 +1,15 @@
 title: Home
 email: 
-description: >- # this means to ignore newlines until "baseurl:"
-  marcus8448's home.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://marcus8448.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+description: "marcus8448's home."
+baseurl: ""
+url: "https://marcus8448.github.io/"
+twitter_username: marcus8448
+github_username:  marcus8448
 
-# Build settings
-theme: minima
+sass:
+  style: compressed
+
+theme:
 plugins:
   - jekyll-feed
 

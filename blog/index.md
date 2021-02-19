@@ -4,25 +4,22 @@ title: Blog
 permalink: /blog/
 ---
 # marcus8448's Blog
-<hr>
-<div class="tiles" style="display: flexbox;">
-{% for post in site.posts %}
-<div class="tile" markdown=1>
-{% if post.image %}
-<img src="{{post.image}}" alt="logo" class="tile">
-{% else %} 
-<img src="/assets/images/marcus8448.png" class="tile">
-{% endif %}
 
-<div style="display: block;" markdown=1>
-# [{{post.title}}]({{post.url}}) 
-{% if post.description %}
-{{post.description}}
-{% else %}
-{{post.excerpt}}
-{% endif %}
-</div>
-
-</div>
-  {% endfor %}
-<div>
+{% for post in site.categories.blog %}
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="{{post.image}}">
+    </p>
+  </figure>
+  <div class="media-content">
+    <a class="content" href="{{post.url}}">
+      <p>
+        <strong>{{post.title}}</strong> <small>@{{post.author}}</small> <small>{{post.date}}</small>
+        <br>
+        {{post.excerpt}}
+      </p>
+    </a>
+  </div>
+</article>
+{% endfor %}

@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: default
 title: "Project-ILE"
+type: "Minecraft Mod"
+categories: [projects]
 permalink: /projects/Project-ILE/
+description: "A Minecraft mod that specializes in projectiles and ranged weaponry."
 ---
 Project-ILE is a modification, or 'plugin' for the video game 'Minecraft' that specializes in projectiles and ranged weaponry. 
 In Febuary 2020 I decided to stop working on it to dedicate more time to my other projects.

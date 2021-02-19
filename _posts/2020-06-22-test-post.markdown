@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: default
 title:  "Test blog post"
-date:   2020-06-22 10:05:34 -0700
-categories: misc
+date:   2020-06-22 10:05:34 -0800
+categories: [misc, blog]
+image: https://marcus8448.github.io/assets/images/marcus8448.png
 ---
 Test post.
 

@@ -1,41 +1,36 @@
 ---
-layout: page
+layout: default
 title: Projects
 permalink: /projects/
 ---
-<hr>
-<div class="tiles">
-<div class="tile" markdown=1>
-<img src="/assets/images/gamemode_overhaul.png" alt="icon" class="tile">
-<div style="display: block;" markdown=1>
+# Projects
 
-# [Gamemode Overhaul](/projects/GamemodeOverhaul) [![Github](https://img.shields.io/badge/Github-Gamemode%20Overhaul-blue?logo=github&style=flat)](https://github.com/marcus8448/GamemodeOverhaul/) [![Curseforge](https://cf.way2muchnoise.eu/full_314612_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/gamemodeoverhaul/)
+<div style="display: flex; flex-wrap: wrap">
+{% for post in site.categories.projects %}
+<div style="padding-bottom: 8vh; padding-right: 2.5vw;"></div>
+<div class="card" style="max-width: 30vw;">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+        </figure>
+      </div>
+      <a class="media-content" href="{{post.permalink}}">
+        <p class="title is-4">{{post.title}}</p>
+        <p class="subtitle is-6">{{post.type}}</p>
+      </a>
+    </div>
 
-Gamemode Overhaul is a Minecraft mod that adds shorter versions of commands to save time.
-
+    <div class="content">
+      {{post.description}}
+    </div>
+  </div>
 </div>
+{% endfor %}
 </div>
-<div class="tile" markdown=1>
-<img src="/assets/images/stellar_horizons.png" alt="icon" class="tile">
-<div style="display: block;" markdown=1>
-
-# [Galacticraft: Rewoven](/projects/Galacticraft-Rewoven) [![Github](https://img.shields.io/badge/Github-Galacticraft%20Rewoven-blue?logo=github&style=flat)](https://github.com/StellarHorizons/Galacticraft-Rewoven/)
-
-
-Galacticraft: Rewoven is a Minecraft mod made with the [Fabric Modloader](https://fabricmc.net/).
-
-</div>
-</div>
-<div class="tile" markdown=1>
-<img src="/assets/images/project-ile.jpeg" alt="icon" class="tile">
-<div style="display: block;" markdown=1>
-
-# [Project-ILE](/projects/Project-ILE) [![Github](https://img.shields.io/badge/Github-Project%20ILE-blue?logo=github&style=flat)](https://github.com/marcus8448/Project-ILE/) [![Curseforge](https://cf.way2muchnoise.eu/full_354645_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/project-ile/)
-
-
-Project-ILE is Minecraft mod that specializes in ranged projectiles and weaponry.
-
-</div>
-</div>
-</div>
-<hr style="display: block;">
