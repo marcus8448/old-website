@@ -3,10 +3,10 @@ layout: default
 title: "Galacticraft: Rewoven"
 type: "Minecraft Mod"
 categories: [projects]
-permalink: "/projects/GalacticraftRewoven/"
-description: "Galacticraft: Rewoven is a Minecraft mod made with the <a href=\"https://fabricmc.net/\"> Fabric Modloader</a>."
+permalink: "/projects/Galacticraft-Rewoven/"
+description: "Galacticraft: Rewoven is a Minecraft mod made with the <a href='https://fabricmc.net/'> Fabric Modloader</a>."
 ---
-Galacticraft: Rewoven is a modification, or 'plugin' for the video game 'Minecraft', that adds many new blocks, ores, dimensions and machines to the game. It is a remake of the original [Galacticraft](https://github.com/TeamGalacticraft/Galacticraft/) made by [micdoodle8](https://micdoodle8.com/) for the [FabricMC](https://fabricmc.net/) modding toolchain.
+Galacticraft: Rewoven is a modification for the video game Minecraft, that adds many new blocks, ores, dimensions and machines to the game. It is a remake of the original [Galacticraft](https://github.com/TeamGalacticraft/Galacticraft/) made by [micdoodle8](https://micdoodle8.com/) for the [FabricMC](https://fabricmc.net/) modding toolchain.
 
 I'm a part of the team [StellarHorizons](https://github.com/StellarHorizons/) working on this project. I've contributed some world/noise generation, many machines, a complex wire/'power distribution' system, networking code, structures, entities and have taken the lead when porting Galacticraft: Rewoven to newer Minecraft versions.
 

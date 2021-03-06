@@ -4,9 +4,9 @@ title: "GamemodeOverhaul"
 permalink: /projects/GamemodeOverhaul/
 type: "Minecraft Mod"
 categories: [projects]
-description: "GamemodeOverhaul is a Minecraft mod that utilizes Mojang's <a href=\"https://github.com/Mojang/brigadier\"> Brigadier Library</a> to restore recently removed command arguments."
+description: "GamemodeOverhaul is a Minecraft mod that utilizes Mojang's <a href='https://github.com/Mojang/brigadier'> Brigadier Library</a> to restore recently removed command arguments."
 ---
-GamemodeOverhaul is a modification, or 'plugin' for the video game 'Minecraft', that utilizes Mojang's [Brigadier](https://github.com/Mojang/brigadier/) to restore recently removed command arguments.
+GamemodeOverhaul is a modification, for the game Minecraft, that utilizes Mojang's [Brigadier](https://github.com/Mojang/brigadier/) to restore recently removed command arguments.
 
  The original goal of this mod was to help the original users who have the muscle memory to type in the old arguments by restoring the arguments, allowing the game to execute the command properly. Now, it's been expanded to a fully configurable modification that adds many command aliases.
 

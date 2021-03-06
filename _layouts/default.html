@@ -2,18 +2,8 @@
 <html lang="en-CA">
   <head>
     <meta charset="utf-8">
-<!--    <link rel="stylesheet" href="/assets/css/index.css">-->
     <link rel="stylesheet" href="/assets/redist/bulma.css">
-
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-132845008-1', 'auto');
-      ga('send', 'pageview');
-      </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-  
+    <link rel="stylesheet" href="/assets/redist/prism.css" />
     <meta name="robots" content="index,follow"/>
     <meta name="language" content="English">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +11,7 @@
     <meta name="keywords" content="marcus8448, GamemodeOverhaul"/>
     <meta name="author" content="marcus8448" />
     <meta name="copyright" content="Copyright marcus8448" />
-    <meta property="og:title" content="marcus8448 - {{page.title}}">
+    <meta property="og:title" content="marcus8448 | {{page.title}}">
     <meta property="og:description" content="{{page.description}}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="/">
@@ -29,22 +19,21 @@
     <link rel="icon" href="/favicon.ico" />
     <title>marcus8448 - {{page.title}}</title>
   </head>
-  
   <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://github.com/marcus8448/">
-        <img src="https://marcus8448.github.io/assets/images/marcus8448.png"><!--width="112" height="28"-->
+        <img src="/assets/images/marcus8448.png">
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="basicNavbar">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div id="basicNavbar" class="navbar-menu">
+    <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="/">
           Home
@@ -88,7 +77,7 @@
       </div>
     </div>
   </nav>
-    <div style="margin-left: 16px;">
+    <div class="content" style="margin-left: 16px;">
       {{ content }}
   	</div>
 
@@ -96,10 +85,12 @@
       <div class="content has-text-centered">
         <p>
           <strong>marcus8448.github.io</strong> by <a href="https://github.com/marcus8448/">marcus8448</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          <a href="https://opensource.org/licenses/GPL-3.0">GPL-3.0-or-later</a>. The website content
           is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
         </p>
       </div>
     </footer>
+  <script src="/assets/redist/prism.js"></script>
+  <script async type="text/javascript" src="/assets/redist/nav.js"></script>
   </body>
 </html>
