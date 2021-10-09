@@ -1,10 +1,10 @@
 title: Home
 email: 
 description: "marcus8448's home."
-baseurl: ""
+baseurl: "/"
 url: "https://marcus8448.github.io/"
 twitter_username: marcus8448
-github_username:  marcus8448
+github_username: marcus8448
 
 sass:
   style: compressed
@@ -13,17 +13,24 @@ theme:
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+projects:
+  - url: galacticraft
+    name: Galacticraft
+    type: Minecraft Mod
+    language: Java
+  - url: gamemode_overhaul
+    name: GamemodeOverhaul
+    type: Minecraft Mod
+    language: Java
+  - url: project-ile
+    name: Project-ILE
+    type: Minecraft Mod
+    language: Java
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - .idea/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
@@ -32,3 +39,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - .gitignore

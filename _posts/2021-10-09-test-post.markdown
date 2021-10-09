@@ -1,0 +1,18 @@
+---
+layout: default
+title:  "Test blog post #3"
+date:   2021-10-09 08:05:34 -0700
+categories: [misc, blog]
+image: /assets/images/marcus8448.png
+---
+# Test post #3
+
+**abc**
+*def*
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```

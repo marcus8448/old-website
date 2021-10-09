@@ -2,13 +2,14 @@
 <html lang="en-CA">
   <head>
     <meta charset="utf-8">
+    <style> html{visibility: hidden;} html, body { height: 100%; } body { display: flex; flex-direction: column; } .content { flex: 1 0 auto; } .footer { flex-shrink: 0; }</style>
     <link rel="stylesheet" href="/assets/redist/bulma.css">
     <link rel="stylesheet" href="/assets/redist/prism.css" />
     <meta name="robots" content="index,follow"/>
     <meta name="language" content="English">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{page.description}}"/>
-    <meta name="keywords" content="marcus8448, GamemodeOverhaul"/>
+    <meta name="keywords" content="marcus8448"/>
     <meta name="author" content="marcus8448" />
     <meta name="copyright" content="Copyright marcus8448" />
     <meta property="og:title" content="marcus8448 | {{page.title}}">
@@ -18,22 +19,23 @@
     <meta name="color-scheme" content="dark light">
     <link rel="icon" href="/favicon.ico" />
     <title>marcus8448 - {{page.title}}</title>
+    <style> html{visibility: visible;} </style>
   </head>
-  <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <body class="has-navbar-fixed-top">
+  <nav class="navbar is-fixed-top is-info has-shadow" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://github.com/marcus8448/">
-        <img src="/assets/images/marcus8448.png">
+      <a class="navbar-item" href="/">
+        <img src="/assets/images/marcus8448.png" alt="marcus8448">
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="top-nav">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="top-nav" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="/">
           Home
@@ -44,49 +46,42 @@
         </a>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="/projects/">
+          <div class="navbar-link">
             Projects
-          </a>
+          </div>
 
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="/projects/Galacticraft-Rewoven/">
-              Galacticraft: Rewoven
-            </a>
-            <a class="navbar-item" href="/projects/GamemodeOverhaul/">
-              GamemodeOverhaul
-            </a>
-            <a class="navbar-item" href="/projects/Project-ILE/">
-              Project-ILE
+            <a class="navbar-item" href="/projects/">
+              Index
             </a>
             <hr class="navbar-divider">
-            <a class="navbar-item" href="/projects/Other/">
-              Other
-            </a>
+            {% for project in site.projects %}
+              <a class="navbar-item" href="/projects/{{ project.url }}/">
+                {{ project.name }}
+              </a>
+            {% endfor %}
           </div>
         </div>
       </div>
 
       <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="navbar-item" href="/about/">
-              About
-            </a>
-          </div>
-        </div>
+        <a class="navbar-item" href="/about/">
+          About
+        </a>
       </div>
     </div>
   </nav>
-    <div class="content" style="margin-left: 16px;">
+    <div class="content mx-4">
+      <h1 class="title is-1 pt-2">{{ page.title }}</h1>
       {{ content }}
   	</div>
 
-    <footer class="footer">
+    <footer class="footer has-background-white-ter">
       <div class="content has-text-centered">
         <p>
           <strong>marcus8448.github.io</strong> by <a href="https://github.com/marcus8448/">marcus8448</a>. The source code is licensed
           <a href="https://opensource.org/licenses/GPL-3.0">GPL-3.0-or-later</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
         </p>
       </div>
     </footer>

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "GamemodeOverhaul"
-permalink: /projects/GamemodeOverhaul/
 type: "Minecraft Mod"
 categories: [projects]
 description: "GamemodeOverhaul is a Minecraft mod that utilizes Mojang's <a href='https://github.com/Mojang/brigadier'> Brigadier Library</a> to restore recently removed command arguments."
@@ -10,7 +9,7 @@ GamemodeOverhaul is a modification, for the game Minecraft, that utilizes Mojang
 
  The original goal of this mod was to help the original users who have the muscle memory to type in the old arguments by restoring the arguments, allowing the game to execute the command properly. Now, it's been expanded to a fully configurable modification that adds many command aliases.
 
-[![Github](https://img.shields.io/badge/Github-Gamemode%20Overhaul-blue?logo=github&style=flat)](https://github.com/marcus8448/GamemodeOverhaul/) [![Curseforge](https://cf.way2muchnoise.eu/full_314612_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/gamemodeoverhaul/)
+[![Github](https://img.shields.io/badge/Github-Gamemode%20Overhaul-blue?logo=github&style=for-the-badge)](https://github.com/marcus8448/GamemodeOverhaul/) [![Curseforge](https://cf.way2muchnoise.eu/full_314612_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/gamemodeoverhaul/)
 
  -----------------------------------
 
